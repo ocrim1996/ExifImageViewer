@@ -87,6 +87,7 @@ class ImageViewer(QMainWindow):
             self.ui.image_viewer.setPixmap(
                 self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
+            # To print in terminal the image size.
             image_width = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
                                            Qt.SmoothTransformation).width()
             image_height = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
@@ -99,6 +100,7 @@ class ImageViewer(QMainWindow):
             self.ui.image_viewer.setPixmap(
                 self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
+            # To print in terminal the image size.
             image_width = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
                                            Qt.SmoothTransformation).width()
             image_height = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
