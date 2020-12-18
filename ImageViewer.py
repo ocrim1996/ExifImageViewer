@@ -30,10 +30,8 @@ class ImageViewer(QMainWindow):
         self.isRotated = False
         self.hasGPSInfo = False
 
-        # Sets the "Double click event" on the list images.
-        self.ui.image_viewer_list.itemDoubleClicked.connect(self.upload_image_view)
-
-        # Sets the "click event" on the list images.
+        # Set the "click event" on the list images.
+        self.ui.image_viewer_list.itemClicked.connect(self.upload_image_view)
         self.ui.image_viewer_list.itemClicked.connect(self.activate_remove_item_button)
 
         # Connect buttons to functions
