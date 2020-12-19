@@ -1,4 +1,6 @@
 import webbrowser
+
+import PyQt5
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import (QFileDialog, QMessageBox, QMainWindow)
 from PyQt5.QtCore import (Qt, QSize)
@@ -220,3 +222,12 @@ class ImageViewer(QMainWindow):
             webbrowser.open_new("https://www.google.com/maps/search/?api=1&query=" + str(position))
         else:
             QMessageBox.about(self, "GPS Error", "This image hasn't GPS Info")
+
+    # Places the window that opens in the center of the screen
+    def center_on_screen(self):
+        frame_gm = self.frameGeometry()
+        screen = PyQt5.QtWidgets.QApplication.desktop().screenNumber(
+            PyQt5.QtWidgets.QApplication.desktop().cursor().pos())
+        center_point = PyQt5.QtWidgets.QApplication.desktop().screenGeometry(screen).center()
+        frame_gm.moveCenter(center_point)
+        self.move(frame_gm.topLeft())
