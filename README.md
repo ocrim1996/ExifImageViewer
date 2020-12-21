@@ -83,6 +83,9 @@ ExifViewer is a widget with two tabs:
 ## Run the Project
 
 To run the project just run the **main.py** file. To test the project you can select the images uploaded to this repository in the `TestImages` folder.
+```sh
+$ python3 main.py
+```
 
 ## Functionalities
 
