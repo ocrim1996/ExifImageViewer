@@ -65,6 +65,7 @@ class ImageViewer(QMainWindow):
         general_details = self._model.get_general_details()
         if filename and bool(general_details):
             self.enable_buttons()
+            self.ui.remove_item_btn.setEnabled(False)
 
             self._model.update_model(filename)
             self._model.insert_image_in_list(filename)
@@ -128,7 +129,6 @@ class ImageViewer(QMainWindow):
 
         self.update_image_view()
         self.rotation_degree = 0
-        self.populate_image_list()
 
     # Rotates the displayed image 90 degrees to the right and updates the image view (Clockwise)
     def right_rotate(self):
