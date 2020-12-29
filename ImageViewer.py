@@ -169,7 +169,7 @@ class ImageViewer(QMainWindow):
             self.ui.left_rotate_btn.setEnabled(True)
             self.ui.right_rotate_btn.setEnabled(True)
 
-    # Clears the list and update the model.
+    # Clears the list and updates the model.
     def clear_list(self):
         self._model.clear_list()
         self._model.update_model("")
@@ -209,6 +209,9 @@ class ImageViewer(QMainWindow):
         elif self.current_item != 0:
             self.current_item = self.current_item - 1
             self.ui.image_viewer_list.setCurrentRow(self.current_item)
+
+        # Set isRotated to False to enter the correct condition of the update_image_view( ) function.
+        self.isRotated = False
         self.update_image_view()
 
     # Opens Google Maps in the location where the photo was taken.
