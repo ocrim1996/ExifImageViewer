@@ -157,7 +157,7 @@ class ImageViewer(QMainWindow):
             item.setToolTip(image)
             item.setIcon(icon)
 
-    # If double click on a image in the list, that image will displayed in the image viewer.
+    # If click on a image in the list, that image will displayed in the image viewer.
     def upload_image_view(self):
         if self.isRotated:
             self.isRotated = False
