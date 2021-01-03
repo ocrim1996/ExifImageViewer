@@ -118,8 +118,8 @@ To run the code you need the following libraries:
 
 Library | Version
 ------------- | -------------
-**PyQt5**  | >= 5.15.1
-**Pillow** | >= 8.0.1 
+**[PyQt5](https://pypi.org/project/PyQt5/5.15.1/)**  | >= 5.15.1
+**[Pillow](https://pypi.org/project/Pillow/8.0.1/)** | >= 8.0.1 
 
 The code has been tested with Ubuntu 20.04 and MacOS Catalina (version 10.15.2).
 
