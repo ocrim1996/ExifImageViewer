@@ -88,12 +88,15 @@ class ImageViewer(QMainWindow):
             self.ui.image_viewer.setPixmap(
                 self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
-            # To print in terminal the image size.
+            # To print the image size.
             image_width = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
                                            Qt.SmoothTransformation).width()
             image_height = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
                                             Qt.SmoothTransformation).height()
             print("• Image Size: " + str(image_width) + "px " + "X " + str(image_height) + "px")
+
+            image_size_str = str(str(image_width) + ' x ' + str(image_height))
+            self.ui.image_size_lineEdit.setText(image_size_str)
 
         elif self._model.current_image and self.isRotated:
             width = self.ui.image_viewer.width() - 40
@@ -101,16 +104,20 @@ class ImageViewer(QMainWindow):
             self.ui.image_viewer.setPixmap(
                 self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
-            # To print in terminal the image size.
+            # To print the image size.
             image_width = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
                                            Qt.SmoothTransformation).width()
             image_height = self.qpix.scaled(QSize(max(width, 512), max(height, 512)), Qt.KeepAspectRatio,
                                             Qt.SmoothTransformation).height()
             print("• Image Size: " + str(image_width) + "px " + "X " + str(image_height) + "px")
 
+            image_size_str = str(str(image_width) + ' x ' + str(image_height))
+            self.ui.image_size_lineEdit.setText(image_size_str)
+
         elif not self._model.current_image:
             self.qpix = QPixmap()
             self.ui.image_viewer.setPixmap(self.qpix)
+            self.ui.image_size_lineEdit.setText('')
             self.ui.get_info_btn.setEnabled(False)
             self.ui.left_rotate_btn.setEnabled(False)
             self.ui.right_rotate_btn.setEnabled(False)
