@@ -1,6 +1,6 @@
 # Exif and Image Viewer
 ## General Introduction to Exif
-[![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php)
+[![MIT License](https://img.shields.io/badge/License-MIT-blueviolet)](https://opensource.org/licenses/mit-license.php)
 [![Platform](https://img.shields.io/badge/OS-Ubuntu%20v.20.04-red)](https://www.ubuntu-it.org/download)
 [![Library](https://img.shields.io/badge/Pyqt5-5.15.1-informational)](https://pypi.org/project/PyQt5/)
 [![Library](https://img.shields.io/badge/Pilllow-8.0.1-informational)](https://pypi.org/project/Pillow/)
