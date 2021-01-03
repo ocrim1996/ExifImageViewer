@@ -119,5 +119,6 @@ Library | Version
 
 The code has been tested with Ubuntu 20.04 and MacOS Catalina (version 10.15.2).
 
-
+## License
+MIT License. See [LICENSE](LICENSE) file for further information.
 
