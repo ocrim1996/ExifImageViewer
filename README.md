@@ -2,7 +2,7 @@
 ## General Introduction to Exif
 [![MIT License](https://img.shields.io/badge/License-MIT-blueviolet)](https://opensource.org/licenses/mit-license.php)
 [![Platform](https://img.shields.io/badge/OS-Ubuntu%20v.20.04-red)](https://www.ubuntu-it.org/download)
-[![Library](https://img.shields.io/badge/Pyqt5-5.15.1-informational)](https://pypi.org/project/PyQt5/)
+[![Library](https://img.shields.io/badge/Pyqt5-5.15.1-informational)](https://pypi.org/project/PyQt5/5.15.1/)
 [![Library](https://img.shields.io/badge/Pilllow-8.0.1-informational)](https://pypi.org/project/Pillow/8.0.1/)
 
 **Exchangeable image file format**, also known as **Exif**, is a standard the defines specific information related to an image or other media captured by digital cameras (including smartphones or tablets). This information is also know as “metadata”.
