@@ -55,7 +55,8 @@ ExifViewer is the main page that appears when you run the project. Its appearanc
   <img src="/Readme_Documents/ImageViewer_Empty.png" alt="ImageViewer Empty" width="50%"/>
 </p>
 
-There are 6 buttons, but in the initial state the only one enabled is "**Add Image**" which allows you to add an image to the project via a FileDialog.
+There are 6 buttons, but in the initial state the only one enabled is "**Add Image**" which allows you to add an image to the project via a FileDialog. <br/>
+There is also a "**Current Size**" label that shows the current size of the displayed image, whose value is dynamically changed if the main page is resized or if the image is rotated using the appropriate buttons. When the Image Viewer is empty the label shows the "width x height" placeholder.
 
 
 When the images are loaded, all buttons are enabled (except "**Remove Item**" which is activated only when you click on an image in the list).
