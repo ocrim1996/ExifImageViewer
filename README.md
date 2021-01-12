@@ -17,7 +17,7 @@ It is capable of storing such important data as:
 - Date / time the image was captured;
 - and even GPS location.
 
-The only file formats that can handle EXIF are **JPEG** and **TIFF** (regarding pictures), which means that you often cannot read the data from other image formats such as GIF and PNG.
+The only file formats that can handle EXIF are **JPEG** and **TIFF** (regarding pictures), which means that you cannot read the data from other image formats such as GIF and PNG.
 EXIF data is embedded in the physical file, and specific tools that are capable of reading this information must be used to view it.
 
 ## Goal of the Project
