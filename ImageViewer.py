@@ -60,7 +60,7 @@ class ImageViewer(QMainWindow):
                                                   options=options)
 
         # Checks (with bool()) if the file is a real image with a picture or only a saved file as .jpg/.jpeg/.png.
-        # Also checks that the image to insert is not already in the list.
+        # Also checks that the image to insert is not already in the image list.
         self._model.general_details.clear()
         self._model.extract_general_details(filename)
         general_details = self._model.get_general_details()
