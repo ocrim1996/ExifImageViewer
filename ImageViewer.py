@@ -60,10 +60,11 @@ class ImageViewer(QMainWindow):
                                                   options=options)
 
         # Checks (with bool()) if the file is a real image with a picture or only a saved file as .jpg/.jpeg/.png.
+        # Also checks that the image to insert is not already in the list.
         self._model.general_details.clear()
         self._model.extract_general_details(filename)
         general_details = self._model.get_general_details()
-        if filename and bool(general_details):
+        if filename and bool(general_details) and filename not in self._model.image_list:
             self.enable_buttons()
             self.ui.remove_item_btn.setEnabled(False)
 
@@ -76,6 +77,8 @@ class ImageViewer(QMainWindow):
             self.update_image_view()
             self.populate_image_list()
 
+        elif filename in self._model.image_list:
+            QMessageBox.about(self, "Duplicated Image", "Image already in the list")
         else:
             QMessageBox.about(self, "Image Error", "No image selected")
 

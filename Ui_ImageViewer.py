@@ -177,7 +177,7 @@ class Ui_ImageViewer(object):
 "border-radius: 8px;")
         self.image_viewer_list.setLineWidth(0)
         self.image_viewer_list.setMidLineWidth(0)
-        self.image_viewer_list.setIconSize(QtCore.QSize(100, 100))
+        self.image_viewer_list.setIconSize(QtCore.QSize(110, 110))
         self.image_viewer_list.setSelectionRectVisible(False)
         self.image_viewer_list.setItemAlignment(QtCore.Qt.AlignHCenter)
         self.image_viewer_list.setObjectName("image_viewer_list")
