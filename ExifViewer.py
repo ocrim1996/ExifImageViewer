@@ -19,7 +19,6 @@ class ExifViewer(QWidget):
         self.model.clear_general_details()
         self.model.extract_general_details(self.model.current_image)
         general_details = self.model.get_general_details()
-        print("• General Details: " + str(general_details))
 
         # If there are general details on current image, call fill_widget function.
         if general_details:
@@ -38,7 +37,6 @@ class ExifViewer(QWidget):
         self.model.clear_exif_details()
         self.model.extract_exif_details(self.model.current_image)
         exif_details = self.model.get_exif_details()
-        print("• Exif Details: " + str(exif_details))
 
         # If there are exif details on current image, call fill_widget function.
         if exif_details:
