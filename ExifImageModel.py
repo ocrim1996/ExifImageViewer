@@ -122,6 +122,7 @@ class ExifImageModel:
             self.general_details['Image size'] = img.size
             self.general_details['Color model'] = img.mode
         except:
+            print("\n")
             print("• No General Details available for this image")
 
     # Returns the general details
